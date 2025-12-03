@@ -8,6 +8,8 @@ Moozo réinvente l’organisation d’événements pour trois acteurs clés :
 L’application centralise tout ce qui est aujourd’hui dispersé entre Excel, WhatsApp, Google Maps, emails et PDF.  
 Elle transforme un processus complexe en une expérience fluide, simple et cohérente.
 
+Rendez-vous sur le [repository](https://github.com/moozo-org/moozo).
+
 ---
 
 ## Fonctionnalités principales
