@@ -45,9 +45,9 @@ Elle transforme un processus complexe en une expérience fluide, simple et cohé
 
 ## Auteurs
 
-- [@emilieboutboule](https://www.github.com/emilieboutboule)  
+- [@emilieboutboul](https://www.github.com/emilieboutboul)  
 - [@gregoirevaillant](https://www.github.com/gregoirevaillant)
 
 ---
 
-Pour les profils recherchés, consultez le fichier **RECRUTEMENT.md**.
+Pour les profils recherchés, consultez le fichier [**RECRUTEMENT.md**](./RECRUTEMENT.md).
