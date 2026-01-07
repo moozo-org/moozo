@@ -54,4 +54,4 @@ https://github.com/user-attachments/assets/50132549-012a-48e7-b7e9-f80c32d43626
 
 ---
 
-Pour les profils recherchés, consultez le fichier [**RECRUTEMENT.md**](./RECRUTEMENT.md).
+Pour les profils recherchés, consultez le fichier [**RECRUTEMENT.md**](./recruitment/RECRUTEMENT.md).
