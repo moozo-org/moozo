@@ -7,6 +7,8 @@ d’un **véritable produit**, de la conception à la mise en production.
 Que tu sois développeur, ingénieur ou passionné de technologie, tu auras un **impact réel** sur les décisions
 techniques et le produit final.
 
+💡 Nous restons **ouverts à toute discussion** sur les technologies, **rien n’est figé** et tout peut évoluer en fonction des idées et des compétences.
+
 ---
 
 ## 🚀 Postes ouverts
