@@ -1,0 +1,9 @@
+[submodule "backend"]
+	path = backend
+	url = git@github.com:moozo-org/backend.git
+[submodule "frontend-mobile"]
+	path = frontend-mobile
+	url = git@github.com:moozo-org/frontend-mobile.git
+[submodule "frontend-web"]
+	path = frontend-web
+	url = git@github.com:moozo-org/frontend-web.git
