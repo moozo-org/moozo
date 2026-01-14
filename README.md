@@ -8,7 +8,12 @@ Moozo réinvente l’organisation d’événements pour trois acteurs clés :
 L’application centralise tout ce qui est aujourd’hui dispersé entre Excel, WhatsApp, Google Maps, emails et PDF.  
 Elle transforme un processus complexe en une expérience fluide, simple et cohérente.
 
-Rendez-vous sur le [repository](https://github.com/moozo-org/moozo).
+---
+## Recrutement
+
+Pour les profils recherchés, consultez le fichier [**RECRUTEMENT.md**](./recruitment/RECRUTEMENT.md).
+
+---
 
 https://github.com/user-attachments/assets/50132549-012a-48e7-b7e9-f80c32d43626
 
@@ -54,4 +59,3 @@ https://github.com/user-attachments/assets/50132549-012a-48e7-b7e9-f80c32d43626
 
 ---
 
-Pour les profils recherchés, consultez le fichier [**RECRUTEMENT.md**](./recruitment/RECRUTEMENT.md).

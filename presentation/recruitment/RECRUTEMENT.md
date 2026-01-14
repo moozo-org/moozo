@@ -13,12 +13,12 @@ techniques et le produit final.
 
 ## 🚀 Postes ouverts
 
-- [Développeur Backend](backend-developer.md)
-- [Développeur Frontend](frontend-developer.md)
-- [Développeur iOS](ios-developer.md)
-- [Développeur Algorithmique](algorithm-developer.md)
-- [Machine Learning Engineer](machine-learning-engineer.md)
-- [DevOps Engineer](devops-engineer.md)
+- [Développeur Backend](backend.md)
+- [Développeur Frontend](frontend.md)
+- [Développeur iOS](ios.md)
+- [Développeur Algorithmique](algorithm.md)
+- [Machine Learning Engineer](machine-learning.md)
+- [DevOps Engineer](devops.md)
 
 ---
 
