@@ -24,7 +24,7 @@ Et répartir les tâches pour avancer sur le document de spécifications.
 
 - Le **PBS** représente les grandes briques fonctionnelles du produit (vision macro).
 - Le **WBS** détaille les fonctionnalités associées à chaque brique.
-- ⚠️ Important :  
+- Important :  
   Le PBS/WBS concerne **uniquement le produit**, pas :
   - L’architecture technique
   - Le déploiement
@@ -37,17 +37,17 @@ Et répartir les tâches pour avancer sur le document de spécifications.
 
 Les grandes catégories identifiées :
 
-- 👤 Utilisateurs
-- 📅 Événements
+- Utilisateurs
+- Événements
   - Gestion des invités (RSVP, emails)
   - Liste de tâches
   - Programmation
   - Plan de salle
-- 💳 Paiements
-- 💬 Messagerie
-- 📸 Photos
-- 🛠 Prestations
-- 🔐 Administration
+- Paiements
+- Messagerie
+- Photos
+- Prestations
+- Administration
 
 Ajout récent : **module d’administration** pour la modération des services et prestataires.
 
