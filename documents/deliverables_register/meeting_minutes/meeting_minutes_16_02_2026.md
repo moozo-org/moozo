@@ -1,7 +1,6 @@
 # Compte Rendu de Réunion
 **Date :** 16 février 2026  
 **Heure :** 10:00  
-**Projet :** Moozo
 **Participants :** Grégoire, Mehdi, Paul, Pierre-Alexis, Emilie  
 
 ---
