@@ -72,7 +72,9 @@ Points à vérifier :
 ## Prochaines étapes
 
 - Intégrer les modifications dans le document principal  
-- Attendre le follow-up pour validation et arbitrage  
+- Attendre le follow-up pour validation et arbitrage
+- Question pour follow-up :
+  - Pour la methodologie, qu'est il attendu ?
 
 ---
 

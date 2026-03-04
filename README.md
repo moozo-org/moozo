@@ -9,11 +9,18 @@ L’application centralise tout ce qui est aujourd’hui dispersé entre Excel, 
 Elle transforme un processus complexe en une expérience fluide, simple et cohérente.
 
 ---
+
 ## Recrutement
 
-Pour les profils recherchés, consultez le fichier [**RECRUTEMENT.md**](./recruitment/RECRUTEMENT.md).
+Les profils actuellement recherchés sont détaillés ici :
+
+[RECRUTEMENT.md](./recruitment/RECRUTEMENT.md)
 
 ---
+
+## Démonstration
+
+Vidéo de présentation :
 
 https://github.com/user-attachments/assets/50132549-012a-48e7-b7e9-f80c32d43626
 
@@ -52,10 +59,23 @@ https://github.com/user-attachments/assets/50132549-012a-48e7-b7e9-f80c32d43626
 
 ---
 
+## Positionnement
+
+MOOZO est une infrastructure événementielle orientée :
+
+* Centralisation
+* Automatisation
+* Réduction des frictions organisationnelles
+* Expérience utilisateur cohérente
+
+---
+
 ## Auteurs
 
 - [@emilieboutboul](https://www.github.com/emilieboutboul)  
 - [@gregoirevaillant](https://www.github.com/gregoirevaillant)
+- [@PaulDecauchy](https://www.github.com/PaulDecauchy)
+- [@polatrk](https://www.github.com/polatrk)
+- [@MehdiB](https://www.github.com/MehdiB)
 
 ---
-
