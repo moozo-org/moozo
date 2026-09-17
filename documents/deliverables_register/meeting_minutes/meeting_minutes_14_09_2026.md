@@ -33,7 +33,9 @@
 - **Pierre-Alexis :**
   - Init de l'archi IA / Algo
 
-- ## **Kesavan :**
+- **Kesavan :**
+  - Recherche technologique et sécurité, identification des failles potentielles et bonnes pratiques associées.
+  - Démarrage de la conception IAM (Identity and Access Management), la matrice des droits d'accès (qui a accès à quoi, sur quelles ressources)
 
 - **Serge :**
   - Init frontend mobile
