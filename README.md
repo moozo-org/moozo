@@ -18,10 +18,11 @@ https://github.com/user-attachments/assets/50132549-012a-48e7-b7e9-f80c32d43626
 
 ## Auteurs
 
-- [@emilieboutboul](https://www.github.com/emilieboutboul)  
 - [@gregoirevaillant](https://www.github.com/gregoirevaillant)
 - [@PaulDecauchy](https://www.github.com/PaulDecauchy)
 - [@polatrk](https://www.github.com/polatrk)
-- [@MehdiB](https://www.github.com/MehdiB)
+- [@mehdib-io](https://github.com/mehdib-io)
+- [@K7epitech](https://github.com/K7epitech)
+- [@serge129000](https://github.com/serge129000)
 
 ---
