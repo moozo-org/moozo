@@ -1,0 +1,72 @@
+name: ClickUp - tâche de review
+
+on:
+  pull_request:
+    types: [review_requested]
+  pull_request_review:
+    types: [submitted]
+
+permissions:
+  contents: read
+
+jobs:
+  create-review-task:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Créer la tâche de review dans ClickUp
+        env:
+          CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
+          LIST_ID: ${{ vars.CLICKUP_REVIEW_LIST_ID }}
+          USERS: ${{ vars.CLICKUP_USERS }}
+          REVIEWER: ${{ github.event.requested_reviewer.login }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if [ -z "${REVIEWER}" ]; then
+            echo "Review demandée à une équipe GitHub, pas à une personne : rien à faire."
+            exit 0
+          fi
+          ASSIGNEE=$(echo "$USERS" | jq -r --arg u "$REVIEWER" '.[$u] // empty')
+          if [ -z "$ASSIGNEE" ]; then
+            echo "Pas d'ID ClickUp pour $REVIEWER dans CLICKUP_USERS : tâche créée sans assigné."
+          fi
+          DUE=$(( ($(date +%s) + 2*24*3600) * 1000 ))   # échéance : J+2
+          BODY=$(jq -n \
+            --arg name "Review PR #$PR_NUMBER · $REPO · $PR_TITLE" \
+            --arg desc "$(printf 'Review demandée à **%s** par %s.\n\nPR : %s' "$REVIEWER" "$PR_AUTHOR" "$PR_URL")" \
+            --arg tag "$(echo "pr-$(basename "$REPO")-$PR_NUMBER-$REVIEWER" | tr "[:upper:]" "[:lower:]")" \
+            --argjson due "$DUE" \
+            --arg assignee "$ASSIGNEE" \
+            '{name:$name, markdown_content:$desc, due_date:$due, tags:["review",$tag], priority:2}
+             + (if $assignee != "" then {assignees:[($assignee|tonumber)]} else {} end)')
+          curl -sS --fail -X POST "https://api.clickup.com/api/v2/list/$LIST_ID/task" \
+            -H "Authorization: $CLICKUP_TOKEN" -H "Content-Type: application/json" \
+            -d "$BODY" | jq '{id, url}'
+
+  close-review-task:
+    if: github.event_name == 'pull_request_review'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Passer la tâche de review en "complete"
+        env:
+          CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
+          LIST_ID: ${{ vars.CLICKUP_REVIEW_LIST_ID }}
+          REVIEWER: ${{ github.event.review.user.login }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          TAG=$(echo "pr-$(basename "$REPO")-$PR_NUMBER-$REVIEWER" | tr "[:upper:]" "[:lower:]")
+          IDS=$(curl -sS --fail "https://api.clickup.com/api/v2/list/$LIST_ID/task?tags%5B%5D=$TAG" \
+            -H "Authorization: $CLICKUP_TOKEN" | jq -r '.tasks[].id')
+          for id in $IDS; do
+            curl -sS --fail -X PUT "https://api.clickup.com/api/v2/task/$id" \
+              -H "Authorization: $CLICKUP_TOKEN" -H "Content-Type: application/json" \
+              -d '{"status":"complete"}' > /dev/null
+            echo "Tâche $id passée en complete"
+          done
