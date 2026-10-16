@@ -326,8 +326,11 @@ Certaines fonctionnalités listées dans ce README peuvent être prévues, en co
 
 ## Auteurs
 
-- [@emilieboutboul](https://www.github.com/emilieboutboul)
+<!-- - [@emilieboutboul](https://www.github.com/emilieboutboul) -->
+
 - [@gregoirevaillant](https://www.github.com/gregoirevaillant)
 - [@PaulDecauchy](https://www.github.com/PaulDecauchy)
 - [@polatrk](https://www.github.com/polatrk)
 - [@MehdiB](https://www.github.com/MehdiB)
+- [@serge129000](https://www.github.com/serge129000)
+- [@K7epitech](https://www.github.com/K7epitech)
