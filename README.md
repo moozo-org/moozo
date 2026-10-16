@@ -1,11 +1,12 @@
 # MOOZO
 
-Moozo réinvente l’organisation d’événements pour trois acteurs clés :  
-- Les organisateurs  
-- Les invités  
-- Les prestataires  
+Moozo réinvente l’organisation d’événements pour trois acteurs clés :
 
-L’application centralise tout ce qui est aujourd’hui dispersé entre Excel, WhatsApp, Google Maps, emails et PDF.  
+- Les organisateurs
+- Les invités
+- Les prestataires
+
+L’application centralise tout ce qui est aujourd’hui dispersé entre Excel, WhatsApp, Google Maps, emails et PDF.
 Elle transforme un processus complexe en une expérience fluide, simple et cohérente.
 
 ## Démonstration
