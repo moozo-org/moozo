@@ -12,4 +12,5 @@ permissions:
 jobs:
   clickup:
     uses: moozo-org/.github/.github/workflows/clickup-sync.yml@main
-    secrets: inherit
+    secrets:
+      CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
