@@ -326,8 +326,6 @@ Certaines fonctionnalités listées dans ce README peuvent être prévues, en co
 
 ## Auteurs
 
-<!-- - [@emilieboutboul](https://www.github.com/emilieboutboul) -->
-
 - [@gregoirevaillant](https://www.github.com/gregoirevaillant)
 - [@PaulDecauchy](https://www.github.com/PaulDecauchy)
 - [@polatrk](https://www.github.com/polatrk)
