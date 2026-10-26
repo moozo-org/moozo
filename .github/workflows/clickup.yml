@@ -1,8 +1,11 @@
 name: ClickUp
 
 on:
+  create:
+  push:
+    branches-ignore: [main, develop]
   pull_request:
-    types: [opened, reopened, review_requested]
+    types: [opened, reopened, ready_for_review, review_requested, closed]
   pull_request_review:
     types: [submitted]
 
