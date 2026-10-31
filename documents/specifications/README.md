@@ -24,17 +24,10 @@ Chaque fichier de domaine (01 à 07) contient une partie fonctionnelle (user sto
 specifications/
   README.md
   00_contexte.md ... 08_pilotage.md
-  wbs/               un diagramme Mermaid du WBS par domaine (source)
-  assets/            couverture d'origine (v1.0)
-  scripts/           mise en page des PDF du WBS
-  Makefile           make pdf VERSION=x.y  /  make wbs
+  wbs/               un diagramme Mermaid du WBS par domaine
   pdf/               versions figées
-    wbs/             un PDF d'une page par domaine du WBS (généré)
-    specifications_v0.0.pdf
-    specifications_v0.1.pdf
-    specifications_v0.2.pdf
-    specifications_v0.3.pdf
-    specifications_v1.0.pdf
+    wbs/             un PDF d'une page par domaine du WBS
+    specifications_v0.0.pdf ... specifications_v1.0.pdf
 ```
 
 ## Versions
@@ -51,18 +44,12 @@ Les fichiers Markdown reprennent le contenu de la v1.0 sans modification de fond
 
 ### Publier une nouvelle version
 
-Prérequis : Docker, rien d'autre. Sans Docker, `brew install pandoc typst` et Node (pour les diagrammes Mermaid) permettent de lancer `make pdf VERSION=1.1` depuis ce dossier.
-
 1. Mettre à jour les fichiers Markdown.
-2. Générer le PDF, depuis n'importe quel dossier : `documents/versioned_documents/build-pdf.sh specifications 1.1`. Le fichier est créé dans `pdf/specifications_v1.1.pdf`.
-3. Poser un tag git `specifications-v1.1`.
-4. Ne jamais modifier un PDF existant : `make` refuse d'écraser une version déjà publiée, une correction donne une nouvelle version.
+2. Générer le PDF et le déposer dans `pdf/` sous le nom `specifications_vX.Y.pdf`. L'outillage de génération (Docker, pandoc, typst) n'est pas versionné.
+3. Poser un tag git `specifications-vX.Y`.
+4. Ne jamais modifier un PDF existant : une correction donne une nouvelle version.
 
-### WBS par domaine
-
-Les diagrammes du WBS sont dans `wbs/` (un fichier Markdown Mermaid par domaine, lisible directement sur GitHub). Pour regénérer les PDF d'une page liés depuis `00_contexte.md` : `documents/versioned_documents/build-pdf.sh specifications wbs`. Ils sont versionnés dans `pdf/wbs/` pour que les liens fonctionnent. Dans le PDF complet, ces liens ne sont pas cliquables.
-
-La couverture (version, date, auteurs) est dans `../scripts/cover.typ.in`, la mise en page dans `../scripts/style.typ.in`. Ces fichiers, `../doc.mk`, `../Dockerfile` et `../build-pdf.sh` sont partagés avec le plan qualité.
+Les diagrammes du WBS sont dans `wbs/` (un fichier Markdown Mermaid par domaine, lisible directement sur GitHub). Les PDF d'une page liés depuis `00_contexte.md` sont dans `pdf/wbs/`.
 
 ## Conventions des fichiers
 

@@ -21,12 +21,9 @@ quality_plan/
   README.md
   01_organisation.md ... 07_choix_technologiques.md
   assets/            images (schéma Pact)
-  Makefile           règles locales : make pdf VERSION=x.y
   pdf/               versions figées
     quality_plan_v0.0.pdf ... quality_plan_v1.0.pdf
 ```
-
-La mise en page, la couverture et les règles de génération sont partagées avec les autres documents : `../doc.mk`, `../scripts/`, `../Dockerfile` et `../build-pdf.sh`.
 
 ## Versions
 
@@ -40,12 +37,10 @@ La mise en page, la couverture et les règles de génération sont partagées av
 
 ### Publier une nouvelle version
 
-Prérequis : Docker, rien d'autre. Sans Docker, `brew install pandoc typst` et Node (pour les diagrammes Mermaid) permettent de lancer `make pdf VERSION=1.1` depuis ce dossier.
-
 1. Mettre à jour les fichiers Markdown.
-2. Générer le PDF, depuis n'importe quel dossier : `documents/versioned_documents/build-pdf.sh quality_plan 1.1`. Le fichier est créé dans `pdf/quality_plan_v1.1.pdf`.
-3. Poser un tag git `quality-plan-v1.1`.
-4. Ne jamais modifier un PDF existant : `make` refuse d'écraser une version déjà publiée, une correction donne une nouvelle version.
+2. Générer le PDF et le déposer dans `pdf/` sous le nom `quality_plan_vX.Y.pdf`. L'outillage de génération (Docker, pandoc, typst) n'est pas versionné.
+3. Poser un tag git `quality-plan-vX.Y`.
+4. Ne jamais modifier un PDF existant : une correction donne une nouvelle version.
 
 ## Conventions
 

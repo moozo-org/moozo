@@ -239,14 +239,9 @@ moozo/
 ├── frontend-web/             sous-module : application web
 ├── frontend-mobile/          sous-module : application mobile
 ├── documents/
-│   ├── versioned_documents/  documents versionnés en PDF et leur outillage
-│   │   ├── specifications/   cahier des charges (Markdown) et ses PDF
-│   │   ├── quality_plan/     plan assurance qualité (Markdown) et ses PDF
-│   │   ├── diagrams/         OBS, PBS, WBS, architecture technique
-│   │   ├── scripts/          mise en page, couverture et diagrammes Mermaid des PDF
-│   │   ├── build-pdf.sh      génère un PDF dans Docker, depuis n'importe quel dossier
-│   │   ├── Dockerfile        image Docker de génération (pandoc, typst, Mermaid)
-│   │   └── doc.mk            règles de génération, partagées par les documents
+│   ├── specifications/       cahier des charges (Markdown) et ses PDF versionnés
+│   ├── quality_plan/         plan assurance qualité (Markdown) et ses PDF versionnés
+│   ├── diagrams/             OBS, PBS, WBS, architecture technique
 │   ├── deliverables_register/
 │   │   ├── meeting_minutes/  comptes rendus de réunion
 │   │   ├── technical_decisions/
