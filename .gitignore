@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# generated while building the PDFs
+documents/versioned_documents/*/build/

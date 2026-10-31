@@ -231,17 +231,35 @@ Sous Windows, l’activation de l’environnement virtuel peut différer :
 
 ## Structure du projet
 
-Structure indicative :
+Le dépôt `moozo` regroupe le code (sous-modules) et la documentation :
 
 ```text
 moozo/
-├── .../
-├── .../
-├── .../
-└── .../
+├── backend/                  sous-module : API
+├── frontend-web/             sous-module : application web
+├── frontend-mobile/          sous-module : application mobile
+├── documents/
+│   ├── versioned_documents/  documents versionnés en PDF et leur outillage
+│   │   ├── specifications/   cahier des charges (Markdown) et ses PDF
+│   │   ├── quality_plan/     plan assurance qualité (Markdown) et ses PDF
+│   │   ├── diagrams/         OBS, PBS, WBS, architecture technique
+│   │   ├── scripts/          mise en page, couverture et diagrammes Mermaid des PDF
+│   │   ├── build-pdf.sh      génère un PDF dans Docker, depuis n'importe quel dossier
+│   │   ├── Dockerfile        image Docker de génération (pandoc, typst, Mermaid)
+│   │   └── doc.mk            règles de génération, partagées par les documents
+│   ├── deliverables_register/
+│   │   ├── meeting_minutes/  comptes rendus de réunion
+│   │   ├── technical_decisions/
+│   │   ├── risk_management/
+│   │   ├── code_reviews/
+│   │   ├── coverage_reports/
+│   │   └── generated_documentation/
+│   ├── CONTRIBUTING.md
+│   └── links.md
+├── presentation/             présentation, vidéo et fiches de recrutement
+├── .github/workflows/        automatisations (ClickUp)
+└── .gitignore
 ```
-
-Cette structure doit être adaptée si l’organisation réelle du dépôt diffère.
 
 ---
 

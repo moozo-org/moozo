@@ -1,0 +1,57 @@
+#let accent = rgb("#A8563C")
+#let accent-light = rgb("#F6E9E3")
+#let ink = rgb("#2B2420")
+#let muted = rgb("#8A7A72")
+
+#set text(lang: "fr", size: 10pt, fill: ink, font: ("Avenir Next", "Helvetica Neue", "Arial", "Liberation Sans"))
+#set par(leading: 0.6em, spacing: 0.9em, justify: false)
+#set page(
+  margin: (x: 2.2cm, top: 2.6cm, bottom: 2.2cm),
+  numbering: "1",
+  header: context {
+    if counter(page).get().first() > 1 {
+      set text(size: 8.5pt, fill: muted)
+      grid(columns: (1fr, auto), [MOOZO - @TITLE@], [Version @VERSION@])
+      v(-4pt)
+      line(length: 100%, stroke: 0.5pt + accent-light)
+    }
+  },
+  footer: context {
+    if counter(page).get().first() > 1 {
+      set text(size: 8.5pt, fill: muted)
+      align(center, counter(page).display())
+    }
+  },
+)
+
+#set list(marker: ([•], [–]), spacing: 0.55em, indent: 0.4em)
+#set image(fit: "contain")
+#show image: it => align(center, block(width: 100%, it))
+#show link: set text(fill: accent)
+#show raw.where(block: false): it => box(fill: luma(242), inset: (x: 3pt), outset: (y: 3pt), radius: 2pt, it)
+
+#show heading: set block(above: 1.3em, below: 0.7em)
+#show heading.where(level: 1): it => {
+  pagebreak(weak: true)
+  block(width: 100%, below: 1.2em)[
+    #text(size: 26pt, weight: "bold", fill: accent, it.body)
+    #v(-6pt)
+    #line(length: 100%, stroke: 1.5pt + accent)
+  ]
+}
+#show heading.where(level: 2): it => block(above: 1.8em, below: 0.9em, text(size: 15pt, weight: "bold", fill: ink, it.body))
+#show heading.where(level: 3): it => block(above: 1.6em, below: 0.7em, text(size: 12.5pt, weight: "bold", fill: accent, it.body))
+#show heading.where(level: 4): it => block(above: 1.3em, below: 0.6em, text(size: 11pt, weight: "bold", it.body))
+#show heading.where(level: 5): it => block(above: 1em, below: 0.4em, text(size: 8pt, weight: "bold", fill: muted, tracking: 0.08em, upper(it.body)))
+
+#set table(
+  inset: (x: 7pt, y: 6pt),
+  stroke: (x, y) => (bottom: 0.5pt + luma(220)),
+  fill: (x, y) => if y == 0 { accent-light },
+)
+#show table.cell.where(y: 0): set text(weight: "bold")
+#show table: set text(size: 9pt)
+#show table.cell: set align(left)
+
+#show outline.entry.where(level: 1): it => { v(0.5em); strong(it) }
+#show outline: set heading(outlined: false)
