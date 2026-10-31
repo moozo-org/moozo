@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+documents/Dockerfile
+documents/build-pdf.sh
+documents/doc.mk
+documents/scripts/
+documents/*/Makefile
+documents/*/scripts/
+documents/*/build/
+documents/specifications/assets/
+documents/quality_plan/assets/
