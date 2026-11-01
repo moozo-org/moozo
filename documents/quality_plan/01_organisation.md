@@ -63,7 +63,7 @@ La cartographie des compétences est présentée ci-dessous, avec trois niveaux 
 | Code review | Maîtrisé | Intermédiaire | Maîtrisé | Maîtrisé | |  |
 | **Organisation / Gestion** | | | | | |  |
 | Product Owner / roadmap | Notions | Notions | Notions | Maîtrisé | |  |
-| Scrum / Jira | Notions | Intermédiaire | Notions | Maîtrisé | |  |
+| Scrum / ClickUp | Notions | Intermédiaire | Notions | Maîtrisé | |  |
 | Rédaction de specs | Notions | Notions | Maîtrisé | Maîtrisé | |  |
 | Communication client | Notions | Notions | Intermédiaire | Maîtrisé | |  |
 

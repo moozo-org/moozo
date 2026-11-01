@@ -153,7 +153,7 @@ MongoDB est utilisé pour stocker les entités principales du projet : utilisate
 - Docker
 - Docker Compose
 - GitHub Actions
-- Jira
+- ClickUp
 - Figma.
 
 ---
@@ -308,7 +308,7 @@ Les règles complètes sont disponibles dans le fichier [`CONTRIBUTING.md`](./CO
 
 Toute contribution doit respecter le workflow suivant :
 
-1. Créer ou sélectionner un ticket Jira.
+1. Créer ou sélectionner un ticket ClickUp.
 2. Créer une branche depuis `develop`.
 3. Développer la fonctionnalité ou le correctif.
 4. Ajouter ou mettre à jour les tests nécessaires.
@@ -333,7 +333,7 @@ Les profils actuellement recherchés sont détaillés dans le document suivant :
 
 Moozo est en phase de conception et de développement.
 
-Certaines fonctionnalités listées dans ce README peuvent être prévues, en cours de développement ou soumises à validation fonctionnelle. Le périmètre final doit être confirmé dans la documentation produit et le backlog Jira.
+Certaines fonctionnalités listées dans ce README peuvent être prévues, en cours de développement ou soumises à validation fonctionnelle. Le périmètre final doit être confirmé dans la documentation produit et le backlog ClickUp.
 
 ---
 

@@ -32,7 +32,7 @@ git pull origin develop
 git checkout -b feature/nom-feature
 ```
 
-Le nom de branche doit être court, explicite et lié au ticket Jira lorsque possible.
+Le nom de branche doit être court, explicite et lié au ticket ClickUp lorsque possible.
 
 Exemples :
 
@@ -115,7 +115,7 @@ Avant d’ouvrir une pull request, vérifier que :
 * le projet build correctement
 * aucun conflit Git n’est présent
 * aucun secret ou fichier sensible n’a été ajouté
-* le ticket Jira est référencé
+* le ticket ClickUp est référencé
 * le titre et la description de la PR sont clairs
 
 ---
@@ -146,7 +146,7 @@ Décrire brièvement le but de la PR.
 - [ ] Tests d’intégration
 - [ ] Tests manuels
 
-## Ticket Jira
+## Ticket ClickUp
 MOOZO-XX
 
 ## Points d’attention
@@ -164,16 +164,16 @@ Une PR ne peut être mergée que si :
 * les tests passent
 * les conflits sont résolus
 * les conventions de code sont respectées
-* le ticket Jira est lié
+* le ticket ClickUp est lié
 * les commentaires bloquants de review sont traités.
 
 Un développeur ne doit pas merger son propre code sans review externe.
 
 ---
 
-## 4. Gestion Jira
+## 4. Gestion ClickUp
 
-Jira est utilisé pour suivre les tâches, bugs, user stories et décisions liées au projet.
+ClickUp est utilisé pour suivre les tâches, bugs, user stories, sprints et décisions liées au projet.
 
 Workflow standard :
 
@@ -183,7 +183,7 @@ To Do → In Progress → Review → Done
 
 Processus attendu :
 
-1. Le ticket est créé dans Jira.
+1. Le ticket est créé dans ClickUp.
 2. Le ticket est placé en `To Do`.
 3. Lorsqu’un développeur commence le travail, il passe le ticket en `In Progress`.
 4. Une branche liée au ticket est créée.
@@ -191,9 +191,9 @@ Processus attendu :
 6. Une pull request est ouverte.
 7. Le ticket passe en `Review`.
 8. La PR est validée puis mergée.
-9. Le ticket passe en `Done`, automatiquement si l’intégration Jira/GitHub est configurée.
+9. Le ticket passe en `Done`, automatiquement si l’intégration ClickUp/GitHub est configurée (workflow `.github/workflows/clickup.yml`).
 
-Chaque PR doit référencer son ticket Jira.
+Chaque PR doit référencer son ticket ClickUp.
 
 Exemple :
 
@@ -483,7 +483,7 @@ Une pull request peut être refusée si :
 * des secrets ou informations sensibles sont exposés
 * la PR est trop large et mélange plusieurs sujets
 * la documentation nécessaire n’est pas mise à jour
-* le ticket Jira n’est pas référencé.
+* le ticket ClickUp n’est pas référencé.
 
 ---
 
@@ -501,7 +501,7 @@ Avant d’ouvrir une pull request, vérifier :
 - [ ] Aucun console.log inutile n’est présent côté frontend
 - [ ] Les logs backend utilisent le logger prévu
 - [ ] La documentation est mise à jour si nécessaire
-- [ ] Le ticket Jira est référencé
+- [ ] Le ticket ClickUp est référencé
 - [ ] La PR a un titre et une description clairs
 ```
 

@@ -4,9 +4,11 @@
 
 Utilisation de Git et GitHub pour la gestion des versions du code et l’organisation des différents projets.
 
-## Jira
+## ClickUp
 
-Jira (software) est utilisé pour la gestion des tickets, des user stories et du suivi de l’avancement des tâches.
+ClickUp est utilisé pour la gestion des tickets, des user stories, des sprints et du suivi de l’avancement des tâches. Les sprints y sont planifiés et suivis. Le planning (Gantt) et le PLD sont mis à jour à chaque follow-up.
+
+ClickUp remplace Jira, voir la [décision technique 02](../deliverables_register/technical_decisions/decision_02_org-software.md).
 
 ## OneDrive
 

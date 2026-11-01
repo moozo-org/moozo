@@ -9,7 +9,7 @@ Source de référence du plan qualité. Les fichiers Markdown de ce dossier sont
 | [01_organisation.md](01_organisation.md) | Structure organisationnelle (OBS), cartographie des compétences, rôles |
 | [02_normes.md](02_normes.md) | Normes Git (branches, commits) et de code (Go, Python, React) |
 | [03_methodologie.md](03_methodologie.md) | Méthodologie de travail |
-| [04_outils.md](04_outils.md) | Outils du projet (Git, Jira, OneDrive, Slack, Figma...) |
+| [04_outils.md](04_outils.md) | Outils du projet (Git, ClickUp, OneDrive, Slack, Figma...) |
 | [05_tests.md](05_tests.md) | Stratégie de tests, critères de qualité et de couverture, workflow |
 | [06_onboarding.md](06_onboarding.md) | Documentation d'onboarding (README, CONTRIBUTING) |
 | [07_choix_technologiques.md](07_choix_technologiques.md) | Choix technologiques, infrastructure et architecture |

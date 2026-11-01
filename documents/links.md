@@ -22,10 +22,8 @@ https://epitechfr-my.sharepoint.com/:f:/g/personal/gregoire_vaillant_epitech_eu/
 
 ## Project Management
 
-**Jira**
-https://moozo.atlassian.net/jira/software/projects/MOOZO/summary
-
-**Click Up**
+**ClickUp**
+https://app.clickup.com/90122181566
 
 ---
 
