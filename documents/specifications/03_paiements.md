@@ -64,7 +64,7 @@ En tant qu’utilisateur, je veux demander le remboursement d’une prestation a
 
 #### User story
 
-En tant qu’utilisateur, je veux demander le remboursement d’une prestation afin d’annuler tout ou partie d’un paiement.
+En tant qu’utilisateur, je veux déclarer un litige sur un paiement afin d’obtenir une résolution en cas de problème avec une prestation.
 
 #### Critères d’acceptation
 

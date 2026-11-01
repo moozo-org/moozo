@@ -100,10 +100,10 @@ Forte charge (≈ 200 événements/mois, ~12 000 SMS). Plans dédiés pour l'API
 
 ## Planning / Gantt
 
-<https://moozo.atlassian.net/jira/software/projects/MOOZO/boards/3/timeline>
+[Gantt chart ClickUp](https://app.clickup.com/90122181566/v/g/6-901223291182-7)
 
 ## Gestion des risques
 
 Cette matrice des risques permet d’identifier les principaux risques techniques, organisationnels, financiers, de sécurité, juridiques et produit du projet. Chaque risque est évalué selon sa probabilité d’occurrence et son impact potentiel. Le score obtenu permet de prioriser les actions de prévention ou de correction à mettre en place.
 
-[MOOZO.xlsx](https://epitechfr-my.sharepoint.com/:x:/r/personal/gregoire_vaillant_epitech_eu/Documents/T-ESP/MOOZO.xlsx?d=wf0a31c47e699439e95254b8becd614a7&csf=1&web=1&e=JkJ27l) - Table des risques
+[Registre des risques](../deliverables_register/risk_management/README.md)

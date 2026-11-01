@@ -22,9 +22,52 @@ Cependant, afin d’éviter tout blocage décisionnel :
 
 ## Cartographie des compétences
 
-La cartographie des compétences est maintenue dans le fichier [MOOZO.xlsx](https://epitechfr-my.sharepoint.com/:x:/r/personal/gregoire_vaillant_epitech_eu/Documents/T-ESP/MOOZO.xlsx?d=wf0a31c47e699439e95254b8becd614a7&csf=1&web=1&e=JkJ27l), dans l’onglet dédié aux compétences de l’équipe.
+La cartographie des compétences est présentée ci-dessous, avec trois niveaux : Notions, Intermédiaire, Maîtrisé.
 
-Ce fichier permet d’identifier rapidement :
+| Domaine / compétence | Pierre-Alexis | Mehdi | Paul | Grégoire | Kesavan | Serge |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Frontend** | | | | | |  |
+| React / Flutter | Intermédiaire | Intermédiaire | Maîtrisé | Maîtrisé | |  |
+| TypeScript | Intermédiaire | Notions | Intermédiaire | Maîtrisé | |  |
+| UI / UX & Figma | Notions | Intermédiaire | Intermédiaire | Maîtrisé | |  |
+| State management | Notions | Intermédiaire | Intermédiaire | Intermédiaire | |  |
+| **Backend** | | | | | |  |
+| Go / Echo / Ogen | Maîtrisé | Notions | Maîtrisé | Notions | |  |
+| API REST & OpenAPI | Maîtrisé | Maîtrisé | Maîtrisé | Maîtrisé | |  |
+| WebSocket / temps réel | Maîtrisé | Intermédiaire | Intermédiaire | Maîtrisé | |  |
+| Workflows asynchrones | Maîtrisé | Maîtrisé | Maîtrisé | Intermédiaire | |  |
+| **Base de données** | | | | | |  |
+| MongoDB | Intermédiaire | Maîtrisé | Maîtrisé | Maîtrisé | |  |
+| Modélisation de données | Maîtrisé | Maîtrisé | Maîtrisé | Intermédiaire | |  |
+| **DevOps / Infra** | | | | | |  |
+| Docker / Compose | Maîtrisé | Intermédiaire | Maîtrisé | Intermédiaire | |  |
+| CI/CD (GitHub Actions) | Intermédiaire | Maîtrisé | Intermédiaire | Intermédiaire | |  |
+| Linux / VPS | Maîtrisé | Maîtrisé | Intermédiaire | Intermédiaire | |  |
+| Monitoring / SIEM | Intermédiaire | Maîtrisé | Intermédiaire | Notions | |  |
+| Object Storage (S3) | Intermédiaire | Notions | Notions | Maîtrisé | |  |
+| **Sécurité** | | | | | |  |
+| Cybersécurité applicative | Maîtrisé | Maîtrisé | Intermédiaire | Intermédiaire | |  |
+| Auth / JWT / OAuth | Maîtrisé | Maîtrisé | Maîtrisé | Maîtrisé | |  |
+| Durcissement infra | Intermédiaire | Maîtrisé | Intermédiaire | Intermédiaire | |  |
+| Pentesting | Intermédiaire | Intermédiaire | Notions | Notions | |  |
+| RGPD / conformité | Intermédiaire | Intermédiaire | Intermédiaire | Notions | |  |
+| **IA** | | | | | |  |
+| Python | Maîtrisé | Intermédiaire | Intermédiaire | Intermédiaire | |  |
+| PyTorch / ML | Intermédiaire | Notions | Notions | Intermédiaire | |  |
+| Computer Vision / facial | Notions | Notions | Notions | Notions | |  |
+| Algorithmique avancée | Intermédiaire | Notions | Intermédiaire | Intermédiaire | |  |
+| Intégration LLM / API IA | Intermédiaire | Notions | Intermédiaire | Maîtrisé | |  |
+| **Test & Quality** | | | | | |  |
+| Tests unitaires (Go/pytest) | Intermédiaire | Intermédiaire | Maîtrisé | Notions | |  |
+| Tests E2E | Intermédiaire | Intermédiaire | Maîtrisé | Intermédiaire | |  |
+| Code review | Maîtrisé | Intermédiaire | Maîtrisé | Maîtrisé | |  |
+| **Organisation / Gestion** | | | | | |  |
+| Product Owner / roadmap | Notions | Notions | Notions | Maîtrisé | |  |
+| Scrum / Jira | Notions | Intermédiaire | Notions | Maîtrisé | |  |
+| Rédaction de specs | Notions | Notions | Maîtrisé | Maîtrisé | |  |
+| Communication client | Notions | Notions | Intermédiaire | Maîtrisé | |  |
+
+Cette cartographie permet d’identifier rapidement :
 
 - Les compétences principales de chaque membre
 - Les domaines d’expertise
@@ -69,8 +112,42 @@ Mon objectif principal est d'éprouver ces architectures en traquant les vulnér
 
 ### Serge GABA : Développeur Frontend Mobile
 
+Développeur Flutter/Dart passionné par le multiplateforme (iOS et Android), je me spécialise aujourd'hui en cybersécurité et architecture des systèmes d'information dans le cadre de mon MSc à Epitech Paris.
+
+J'ai développé et déployé plusieurs applications mobiles en Flutter, en m'appuyant sur une architecture Clean Architecture avec BLoC/Riverpod/GetX côté frontend, et Node.js/PostgreSQL/MongoDB côté backend.
+
+Sur ce projet, mon rôle est d'assurer le développement de l'application mobile, en veillant à ce qu'elle s'intègre proprement avec les briques backend et infrastructure construites par le reste de l'équipe, tout en appliquant les bonnes pratiques de sécurité côté client
+
+Ma double casquette mobile/cybersécurité me permet d'aborder le développement applicatif avec une attention particulière portée à la sécurité des flux de données et à la robustesse face aux menaces côté client.
+
 ### Grégoire VAILLANT : PO / Développeur full stack
 
 Mon profil est hybride, j’ai une formation initiale en école de commerce à emlyon business school, puis une spécialisation technique en développement informatique à EPITECH. Cette double formation me permet de comprendre à la fois les enjeux stratégiques d’un projet (vision produit, priorisation, cohérence globale) et ses contraintes techniques concrètes.
 
 Au cours de mon alternance chez Quiz Room, j’ai été impliqué à la fois dans le développement full stack (MERN, API, AWS S3, gestion serveur) et dans des échanges organisationnels et fonctionnels. Cette position intermédiaire m’a naturellement amené à faire le lien entre les besoins métier et l’implémentation technique.
+
+## Matrice RACI
+
+| Activité / tâche | Pierre-Alexis | Mehdi | Paul | Grégoire | Kesavan | Serge |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| Design des écrans (UI/UX & Figma) | C | C | C | A/R | |  |
+| Architecture technique & choix techno | R | C | C | A | |  |
+| Développement Frontend (Flutter) | I | I | R | A/R | |  |
+| Développement Backend (Go / API REST) | R | R | A/R | I | |  |
+| Modélisation base de données (MongoDB) | C | A/R | C | C | |  |
+| Module IA / Computer Vision (reco. faciale) | A/R | I | C | I | |  |
+| Infrastructure & DevOps (Docker, CI/CD, VPS) | C | A/R | C | C | |  |
+| Sécurité & Authentification (JWT / OAuth) | A/R | C | C | I | |  |
+| Conformité RGPD & données personnelles | R | R | R | A/R | |  |
+| Tests unitaires & E2E | R | R | A/R | R | |  |
+| Gestion de projet & roadmap | C | C | C | A/R | |  |
+| Rédaction des specs fonctionnelles | R | R | R | A/R | |  |
+| Communication client & démos | R | R | R | A/R | |  |
+
+Légende :
+
+- **R** (Responsible, réalisateur) : exécute la tâche, plusieurs personnes possibles.
+- **A** (Accountable, approbateur) : supervise, valide le livrable et rend compte, un seul par tâche.
+- **C** (Consulted, consulté) : conseille dans son domaine, consulté avant la décision.
+- **I** (Informed, informé) : tenu au courant de l'avancement et des résultats.
+- **A/R** : la même personne est à la fois approbateur et réalisateur de la tâche.

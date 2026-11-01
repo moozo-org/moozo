@@ -120,7 +120,14 @@ En tant qu’organisateur, je veux relancer automatiquement ou manuellement les 
 
 ##### User story
 
+En tant qu’organisateur, je veux voir la liste de mes invités avec leur statut RSVP afin de suivre les réponses.
+
 ##### Critères d’acceptation
+
+- Affichage de la liste complète des invités de l’événement
+- Statut RSVP de chaque invité (Accepté, Refusé, En attente)
+- Liste paginée
+- Accessible uniquement à l’organisateur de l’événement
 
 #### Répondre à un RSVP (invité)
 

@@ -2,17 +2,33 @@
 
 ## Partie fonctionnelle
 
-### Inscription
+### Inscription d’un organisateur
 
 #### User story
 
-En tant qu’utilisateur, je veux m’inscrire afin de créer un compte Moozo.
+En tant qu’organisateur, je veux m’inscrire depuis la page d’inscription organisateur afin de créer un compte Moozo.
 
 #### Critères d’acceptation
 
+- Page d’inscription dédiée aux organisateurs
 - Saisie du nom, prénom, courriel ou téléphone, mot de passe
 - Acceptation des CGU et de la politique de confidentialité
 - Validation du formulaire
+
+### Inscription d’un prestataire
+
+#### User story
+
+En tant que prestataire, je veux m’inscrire depuis une page d’inscription dédiée afin de créer un compte prestataire et proposer mes services.
+
+#### Critères d’acceptation
+
+- Page d’inscription distincte de celle de l’organisateur, accessible depuis un lien dédié (ex. « Devenir prestataire »)
+- Saisie du nom, prénom, courriel ou téléphone, mot de passe
+- Envoi de justificatifs officiels (liste des documents à définir)
+- Acceptation des CGU et de la politique de confidentialité
+- Validation du formulaire
+- Le compte prestataire doit être validé par un administrateur avant de pouvoir publier des prestations
 
 ### Vérification du compte
 
@@ -82,7 +98,7 @@ En tant qu’utilisateur, je veux me déconnecter afin de sécuriser mon compte.
 
 #### User story
 
-En tant qu’invité, je veux vérifier mon identité lors de l’événement afin de confirmer que je suis bien la bonne personne.
+En tant qu’utilisateur, je veux supprimer mon compte afin de retirer définitivement mon accès à la plateforme.
 
 #### Critères d’acceptation
 
@@ -101,12 +117,14 @@ En tant qu’invité, je veux vérifier mon identité lors de l’événement af
 
 ## Partie technique
 
-### Inscription
+### Inscription d’un organisateur
 
-Permettre à un nouvel utilisateur de créer un compte sur la plateforme Moozo.
+Permettre à un nouvel organisateur de créer un compte sur la plateforme Moozo.
 
 #### Règles métier
 
+- Inscription depuis une page dédiée aux organisateurs
+- Le rôle ORGANIZER est attribué automatiquement
 - L'email OU le numéro de téléphone est obligatoire
 - Le mot de passe doit respecter une complexité minimale (8 caractères, majuscule, chiffre)
 - Acceptation des CGU obligatoire
@@ -132,6 +150,44 @@ Permettre à un nouvel utilisateur de créer un compte sur la plateforme Moozo.
 - 409 si email déjà existant
 - 201 + envoi du code de vérification
 - Compte créé avec statut PENDING
+- Compte créé avec le rôle ORGANIZER
+
+### Inscription d’un prestataire
+
+Permettre à un nouveau prestataire de créer un compte depuis une page d’inscription dédiée.
+
+#### Règles métier
+
+- Inscription depuis une page distincte de celle de l'organisateur
+- Mêmes règles que l'inscription organisateur : email OU téléphone obligatoire, complexité du mot de passe, acceptation des CGU
+- Des justificatifs officiels sont demandés à l'inscription (liste des documents à définir)
+- Le rôle PROVIDER est attribué automatiquement
+- Un code de vérification est envoyé automatiquement après l'inscription (email ou SMS)
+- Le prestataire est créé au statut EN_ATTENTE : il ne peut pas publier de prestation tant qu'un administrateur ne l'a pas validé
+
+#### API
+
+- `POST /api/auth/register/provider` (endpoint à confirmer)
+
+#### Validations
+
+- nom et prénom obligatoires
+- email OU téléphone obligatoire
+- mot de passe : min. 8 caractères
+- CGU acceptées
+- Email unique en base
+- justificatifs obligatoires (formats et taille à définir)
+
+#### Tests
+
+- 400 si email ET téléphone absents
+- 400 si CGU non acceptées
+- 400 si mot de passe trop faible
+- 400 si justificatifs absents
+- 409 si email déjà existant
+- 201 + envoi du code de vérification
+- Compte créé avec statut PENDING et le rôle PROVIDER
+- Prestataire créé au statut EN_ATTENTE
 
 ### Vérification du compte
 
@@ -169,7 +225,7 @@ Authentifier un utilisateur existant et créer une session.
 
 - Connexion possible par email ou téléphone + mot de passe
 - Session créée via cookie sécurisé
-- Redirection selon le rôle de l'utilisateur (ORGANIZER, PRESTATAIRE, ADMIN)
+- Redirection selon le rôle de l'utilisateur (ORGANIZER, PROVIDER, ADMIN)
 
 #### API
 

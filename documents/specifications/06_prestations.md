@@ -126,7 +126,7 @@ Permet à un prestataire authentifié de créer une nouvelle prestation.
 
 #### Acteur
 
-- Prestataire connecté (rôle : PRESTATAIRE)
+- Prestataire connecté (rôle : PROVIDER)
 
 #### Préconditions
 

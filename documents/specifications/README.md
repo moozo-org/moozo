@@ -40,7 +40,7 @@ specifications/
 | v0.3 | [pdf/specifications_v0.3.pdf](pdf/specifications_v0.3.pdf) | |
 | v1.0 | [pdf/specifications_v1.0.pdf](pdf/specifications_v1.0.pdf) | contenu repris dans les fichiers Markdown de ce dossier |
 
-Les fichiers Markdown reprennent le contenu de la v1.0 sans modification de fond.
+Les fichiers Markdown reprennent la v1.0, avec les évolutions suivantes : inscription séparée organisateur / prestataire, rôle des prestataires renommé `PROVIDER` (comme `ORGANIZER` et `ADMIN`), lien vers le Gantt ClickUp (v1.2), et correction de trois user stories vides ou copiées par erreur (après la v1.2).
 
 ### Publier une nouvelle version
 
@@ -56,18 +56,14 @@ Les diagrammes du WBS sont dans `wbs/` (un fichier Markdown Mermaid par domaine,
 - Un fichier par domaine : `# Domaine`, puis `## Partie fonctionnelle` et `## Partie technique`.
 - Un domaine regroupé en sous-parties (Événements, Administration, Messagerie, Photos) a un niveau de titre en plus : sous-partie, fonctionnalité, puis rubrique.
 - Rubriques fonctionnelles : `User story`, `Critères d'acceptation`. Rubriques techniques : `Règles métier`, `API`, `Validations`, `Tests`.
-- Les titres sont écrits en minuscules avec une majuscule initiale, sans point final. Le contenu des paragraphes reprend la v1.0 sans modification.
+- Les titres sont écrits en minuscules avec une majuscule initiale, sans point final. Le contenu des paragraphes reprend la v1.0, hors évolutions listées dans « Versions ».
 
 ## Points à clarifier dans la v1.0
 
-Relevés pendant la conversion, volontairement laissés tels quels dans les fichiers de domaine.
+Relevés pendant la conversion de la v1.0. Les user stories vides ou copiées par erreur (« Voir les invités », « Suppression du compte », « Gérer les litiges ») ont été corrigées après la v1.2.
 
-- `02_evenements.md`, « Voir les invités » : les parties User story et Critères d'acceptation sont vides.
-- `01_utilisateur.md`, « Suppression du compte » : la user story est celle de la vérification d'identité de l'invité (copie).
-- `03_paiements.md`, « Gérer les litiges » : la user story est celle du remboursement (copie).
-- `01_utilisateur.md`, « Inscription » : aucun champ ne permet de choisir entre organisateur et prestataire, et le parcours d'inscription d'un prestataire (demande, documents, validation par l'administrateur) n'est pas décrit.
-- Le rôle des prestataires s'appelle `PRESTATAIRE` dans la spec technique : à confirmer avec le backend.
-- `08_pilotage.md` : le planning renvoie vers Jira et la matrice des risques vers un classeur Excel externe.
+- `01_utilisateur.md`, « Inscription d'un prestataire » (ajoutée depuis la v1.0) : liste des justificatifs officiels, formats et taille, endpoint d'inscription et libellé du lien « Devenir prestataire » à définir.
+- `08_pilotage.md` : le planning renvoie vers le Gantt ClickUp et la matrice des risques vers un classeur Excel externe.
 
 ## Structure d'une spec technique
 
