@@ -45,5 +45,5 @@ quality_plan/
 ## Conventions
 
 - Un fichier par grande partie, numéroté dans l'ordre du document, avec un seul titre de niveau 1 par fichier.
-- Les schémas sont écrits en Mermaid directement dans les fichiers Markdown (organigramme, pipeline CI/CD). L'architecture technique reste une image de `../diagrams/`, le schéma Pact une image de `assets/`.
+- Le schéma d'architecture technique n'est écrit qu'une fois, dans `../diagrams/technical_architecture.md`. Le plan qualité l'appelle avec le repère `<!-- include: ../diagrams/technical_architecture.md -->`, remplacé par le diagramme à la génération du PDF. Les autres schémas (organigramme, pipeline CI/CD) sont en Mermaid dans les fichiers, le schéma Pact est une image de `assets/`.
 - Le contenu reprend la v1.0 sans modification de fond.
