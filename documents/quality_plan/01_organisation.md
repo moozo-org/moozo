@@ -27,45 +27,45 @@ La cartographie des compétences est présentée ci-dessous, avec trois niveaux 
 | Domaine / compétence | Pierre-Alexis | Mehdi | Paul | Grégoire | Kesavan | Serge |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | **Frontend** | | | | | |  |
-| React / Flutter | Intermédiaire | Intermédiaire | Maîtrisé | Maîtrisé | |  |
-| TypeScript | Intermédiaire | Notions | Intermédiaire | Maîtrisé | |  |
-| UI / UX & Figma | Notions | Intermédiaire | Intermédiaire | Maîtrisé | |  |
-| State management | Notions | Intermédiaire | Intermédiaire | Intermédiaire | |  |
+| React / Flutter | Intermédiaire | Intermédiaire | Maîtrisé | Maîtrisé | | Maîtrisé |
+| TypeScript | Intermédiaire | Notions | Intermédiaire | Maîtrisé | | Intermédiaire |
+| UI / UX & Figma | Notions | Intermédiaire | Intermédiaire | Maîtrisé | | Intermédiaire |
+| State management | Notions | Intermédiaire | Intermédiaire | Intermédiaire | | Maîtrisé |
 | **Backend** | | | | | |  |
-| Go / Echo / Ogen | Maîtrisé | Notions | Maîtrisé | Notions | |  |
-| API REST & OpenAPI | Maîtrisé | Maîtrisé | Maîtrisé | Maîtrisé | |  |
-| WebSocket / temps réel | Maîtrisé | Intermédiaire | Intermédiaire | Maîtrisé | |  |
-| Workflows asynchrones | Maîtrisé | Maîtrisé | Maîtrisé | Intermédiaire | |  |
+| Go / Echo / Ogen | Maîtrisé | Notions | Maîtrisé | Notions | | Notions |
+| API REST & OpenAPI | Maîtrisé | Maîtrisé | Maîtrisé | Maîtrisé | | Maîtrisé |
+| WebSocket / temps réel | Maîtrisé | Intermédiaire | Intermédiaire | Maîtrisé | | Intermédiaire |
+| Workflows asynchrones | Maîtrisé | Maîtrisé | Maîtrisé | Intermédiaire | | Notions |
 | **Base de données** | | | | | |  |
-| MongoDB | Intermédiaire | Maîtrisé | Maîtrisé | Maîtrisé | |  |
-| Modélisation de données | Maîtrisé | Maîtrisé | Maîtrisé | Intermédiaire | |  |
+| MongoDB | Intermédiaire | Maîtrisé | Maîtrisé | Maîtrisé | | Intermédiaire |
+| Modélisation de données | Maîtrisé | Maîtrisé | Maîtrisé | Intermédiaire | | Intermédiaire |
 | **DevOps / Infra** | | | | | |  |
-| Docker / Compose | Maîtrisé | Intermédiaire | Maîtrisé | Intermédiaire | |  |
-| CI/CD (GitHub Actions) | Intermédiaire | Maîtrisé | Intermédiaire | Intermédiaire | |  |
-| Linux / VPS | Maîtrisé | Maîtrisé | Intermédiaire | Intermédiaire | |  |
-| Monitoring / SIEM | Intermédiaire | Maîtrisé | Intermédiaire | Notions | |  |
-| Object Storage (S3) | Intermédiaire | Notions | Notions | Maîtrisé | |  |
+| Docker / Compose | Maîtrisé | Intermédiaire | Maîtrisé | Intermédiaire | | Intermédiaire |
+| CI/CD (GitHub Actions) | Intermédiaire | Maîtrisé | Intermédiaire | Intermédiaire | | Intermédiaire |
+| Linux / VPS | Maîtrisé | Maîtrisé | Intermédiaire | Intermédiaire | | Intermédiaire |
+| Monitoring / SIEM | Intermédiaire | Maîtrisé | Intermédiaire | Notions | | Notions |
+| Object Storage (S3) | Intermédiaire | Notions | Notions | Maîtrisé | | Notions |
 | **Sécurité** | | | | | |  |
-| Cybersécurité applicative | Maîtrisé | Maîtrisé | Intermédiaire | Intermédiaire | |  |
-| Auth / JWT / OAuth | Maîtrisé | Maîtrisé | Maîtrisé | Maîtrisé | |  |
-| Durcissement infra | Intermédiaire | Maîtrisé | Intermédiaire | Intermédiaire | |  |
-| Pentesting | Intermédiaire | Intermédiaire | Notions | Notions | |  |
-| RGPD / conformité | Intermédiaire | Intermédiaire | Intermédiaire | Notions | |  |
+| Cybersécurité applicative | Maîtrisé | Maîtrisé | Intermédiaire | Intermédiaire | | Intermédiaire |
+| Auth / JWT / OAuth | Maîtrisé | Maîtrisé | Maîtrisé | Maîtrisé | | Maîtrisé |
+| Durcissement infra | Intermédiaire | Maîtrisé | Intermédiaire | Intermédiaire | | Notions |
+| Pentesting | Intermédiaire | Intermédiaire | Notions | Notions | | Notions |
+| RGPD / conformité | Intermédiaire | Intermédiaire | Intermédiaire | Notions | | Intermédiaire |
 | **IA** | | | | | |  |
-| Python | Maîtrisé | Intermédiaire | Intermédiaire | Intermédiaire | |  |
-| PyTorch / ML | Intermédiaire | Notions | Notions | Intermédiaire | |  |
-| Computer Vision / facial | Notions | Notions | Notions | Notions | |  |
-| Algorithmique avancée | Intermédiaire | Notions | Intermédiaire | Intermédiaire | |  |
-| Intégration LLM / API IA | Intermédiaire | Notions | Intermédiaire | Maîtrisé | |  |
+| Python | Maîtrisé | Intermédiaire | Intermédiaire | Intermédiaire | | Intermédiaire |
+| PyTorch / ML | Intermédiaire | Notions | Notions | Intermédiaire | | Notions |
+| Computer Vision / facial | Notions | Notions | Notions | Notions | | Notions |
+| Algorithmique avancée | Intermédiaire | Notions | Intermédiaire | Intermédiaire | | Intermédiaire |
+| Intégration LLM / API IA | Intermédiaire | Notions | Intermédiaire | Maîtrisé | | Intermédiaire |
 | **Test & Quality** | | | | | |  |
-| Tests unitaires (Go/pytest) | Intermédiaire | Intermédiaire | Maîtrisé | Notions | |  |
-| Tests E2E | Intermédiaire | Intermédiaire | Maîtrisé | Intermédiaire | |  |
-| Code review | Maîtrisé | Intermédiaire | Maîtrisé | Maîtrisé | |  |
+| Tests unitaires (Go/pytest) | Intermédiaire | Intermédiaire | Maîtrisé | Notions | | Intermédiaire |
+| Tests E2E | Intermédiaire | Intermédiaire | Maîtrisé | Intermédiaire | | Notions |
+| Code review | Maîtrisé | Intermédiaire | Maîtrisé | Maîtrisé | | Intermédiaire |
 | **Organisation / Gestion** | | | | | |  |
-| Product Owner / roadmap | Notions | Notions | Notions | Maîtrisé | |  |
-| Scrum / ClickUp | Notions | Intermédiaire | Notions | Maîtrisé | |  |
-| Rédaction de specs | Notions | Notions | Maîtrisé | Maîtrisé | |  |
-| Communication client | Notions | Notions | Intermédiaire | Maîtrisé | |  |
+| Product Owner / roadmap | Notions | Notions | Notions | Maîtrisé | | Notions |
+| Scrum / ClickUp | Notions | Intermédiaire | Notions | Maîtrisé | | Intermédiaire |
+| Rédaction de specs | Notions | Notions | Maîtrisé | Maîtrisé | | Intermédiaire |
+| Communication client | Notions | Notions | Intermédiaire | Maîtrisé | | Intermédiaire |
 
 Cette cartographie permet d’identifier rapidement :
 
