@@ -13,9 +13,11 @@ https://github.com/moozo-org
 
 ---
 
-## File Storage
+## File Storage (archive)
 
-**OneDrive**
+Documentation is now in the GitHub repository (single source of truth). OneDrive is kept as an archive only.
+
+**OneDrive (archive)**
 https://epitechfr-my.sharepoint.com/:f:/g/personal/gregoire_vaillant_epitech_eu/IgDL8OaAn5abSYuJahEb4BMVAU58e_-ZlNS0cleeHWD9Fy4
 
 ---

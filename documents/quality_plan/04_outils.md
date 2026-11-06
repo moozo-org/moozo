@@ -10,9 +10,11 @@ ClickUp est utilisé pour la gestion des tickets, des user stories, des sprints 
 
 ClickUp remplace Jira, voir la [décision technique 02](../deliverables_register/technical_decisions/decision_02_org-software.md).
 
-## OneDrive
+## Documentation (dépôt GitHub)
 
-Microsoft OneDrive sert au stockage et au partage des documents administratifs, cahiers des charges, rapports et fichiers bureautiques au format Word ou similaire. L’objectif est d’avoir un référentiel documentaire unique et accessible à l’équipe.
+La documentation (cahiers des charges, rapports, plan qualité, suivi, tableaux) est écrite en fichiers Markdown dans le dépôt GitHub, qui est la source unique de vérité. Les modifications passent par une pull request vers `main`, ce qui assure le versioning et la relecture. Les diagrammes sont écrits en Mermaid, et les PDF (ainsi que le WBS et d’autres artefacts) sont générés automatiquement depuis les fichiers Markdown.
+
+OneDrive n’est plus utilisé pour les documents vivants (anciens fichiers Word et Excel), voir la [décision technique 05](../deliverables_register/technical_decisions/decision_05_docs-as-code.md). Le dossier existant reste une archive.
 
 ## Google drive
 

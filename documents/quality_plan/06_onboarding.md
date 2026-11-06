@@ -14,7 +14,7 @@ Le fichier **Contributing** explique les règles pour participer au développeme
 
 ## Parcours d'arrivée
 
-1. **Obtenir les accès** : organisation GitHub, ClickUp, Slack, Figma et OneDrive. Les liens sont dans `documents/links.md`.
+1. **Obtenir les accès** : organisation GitHub (dépôt et documentation), ClickUp, Slack et Figma. Les liens sont dans `documents/links.md`.
 2. **Lire dans cet ordre** :
    1. le Readme ;
    2. le Contributing ;
