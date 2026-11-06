@@ -38,8 +38,7 @@ La documentation et les tableurs de suivi sont écrits en **Markdown dans le dé
 ## Conséquences
 
 - Migration des Word et Excel vers des fichiers `.md` dans le dépôt (en cours, faite en grande partie le 6 novembre).
-- Les scripts de génération de PDF et de WBS doivent être poussés dans le dépôt (action de Grégoire, non encore faite).
 - Documents à mettre à jour : Plan Qualité v1.0 (`04_outils.md`, `06_onboarding.md`, sommaire du `README.md` du plan qualité) et `links.md`.
 - Les PDF du dossier `pdf/` restent des photos figées des fichiers Markdown à une date donnée.
 - Point de vigilance : les documents remis à Lucas et Antoine (follow-up, PLD) doivent être exportés en PDF depuis le Markdown. Format exact à confirmer.
-- Le dossier OneDrive existant est conservé comme archive ; sort final (lecture seule ou suppression) à confirmer.
+- Le dossier OneDrive existant est conservé comme archive.
